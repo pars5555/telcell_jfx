@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="632.0" prefWidth="871.0" styleClass="aaa" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telcell.controllers.FXMLHomeController">
+    <children>
+        <fx:include source="Header.fxml" />
+        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#handleButtonAction" text="%key1" />
+    
+      
+    </children>
+</AnchorPane>

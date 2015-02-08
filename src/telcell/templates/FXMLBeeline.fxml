@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane styleClass="bbb" prefHeight="632.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telcell.controllers.FXMLBeelineController">
+    <children>
+        <fx:include source="Header.fxml"/>
+        <Button fx:id="button" layoutX="126" layoutY="90" onAction="#onGoTOHomeClicked" text="home" />
+       
+    </children>
+</AnchorPane>
