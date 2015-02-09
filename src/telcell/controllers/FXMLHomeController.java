@@ -11,29 +11,33 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import telcell.Global;
+import telcell.interfaces.Showable;
+import telcell.managers.SoundManager;
 
 /**
  *
  * @author default
  */
-public class FXMLHomeController implements Initializable {
-    
-    @FXML
-    private Label label;
+public class FXMLHomeController implements Initializable, Showable {
+
     @FXML
     private Button button;
-    
+
     @FXML
     private void handleButtonAction(ActionEvent event) {
         Global global = Global.getInstance();
         global.showBeeline();
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
-    }    
-    
+    }
+
+    @Override
+    public void onShow() {
+        SoundManager.startOmxPlayer("audio/test.mp3");
+    }
+
 }

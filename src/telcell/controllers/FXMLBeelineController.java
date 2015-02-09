@@ -13,12 +13,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import telcell.Global;
+import telcell.interfaces.Showable;
 
 /**
  *
  * @author default
  */
-public class FXMLBeelineController implements Initializable {
+public class FXMLBeelineController implements Initializable , Showable {
     
     @FXML
     private Label label;
@@ -35,5 +36,10 @@ public class FXMLBeelineController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         
     }    
+
+    @Override
+    public void onShow() {
+       
+    }
     
 }

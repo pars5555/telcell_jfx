@@ -16,8 +16,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Global global = Global.getInstance(stage);
-
+          Global.getInstance(stage).start();
     }
 
     /**

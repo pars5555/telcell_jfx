@@ -12,29 +12,33 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import telcell.Global;
+import telcell.interfaces.Showable;
 
 /**
  *
  * @author default
  */
-public class FXMLHeaderController implements Initializable {
+public class FXMLHeaderController implements Initializable, Showable {
 
     @FXML
     private void setLangToEn(ActionEvent event) {
         Global global = Global.getInstance();
         global.setLocale(new Locale("en", "US"));
-        global.showHome();
     }
-    
+
     @FXML
     private void setLangToHy(ActionEvent event) {
         Global global = Global.getInstance();
         global.setLocale(new Locale("hy", "AM"));
-        global.showHome();
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+
+    }
+
+    @Override
+    public void onShow() {
 
     }
 
